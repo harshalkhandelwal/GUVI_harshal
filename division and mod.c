@@ -1,22 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,d[100],i;
+    int a,b,d;
     char sign;
     printf("enter the 2 numbers: ");
-    for(i=0;i<4;i++)
-    {
-        scanf("%d%c%d",&a,&sign,&b);
+    scanf("%d%c%d",&a,&sign,&b);
         if(sign=='/')
             {
-                d[i]=a/b;
+                d=a/b;
             }
         else
             {
-                d[i]=a%b;
+                d=a%b;
             }
-    }
-    for(i=0;i<4;i++)
-        printf("%d\n",d[i]);
+        printf("%d\n",d);
 
 }
